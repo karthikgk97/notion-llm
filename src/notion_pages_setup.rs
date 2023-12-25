@@ -37,6 +37,7 @@ impl NotionPagesAPI{
 
     fn str_replacer(string_to_replace: &str) -> String{
         match string_to_replace{
+            "heading_1" => String::from("#"),
             "heading_2" => String::from("##"),
             "bulleted_list_item" => String::from("-"),
             _ => String::from(string_to_replace)
